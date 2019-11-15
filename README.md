@@ -28,11 +28,3 @@ export const Demo = () => {
   );
 };
 ```
-
-## Specification
-
-### `usePosition()` input
-
-- `settings: object` - [options]
-  - `settings.length` - truncating text  by the number of words,
-  - `settings.ending` - add string i.e (...) ti the end of the word`),
