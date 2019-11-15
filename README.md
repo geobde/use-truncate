@@ -18,12 +18,17 @@ const { text, setText } = useTruncate(string);
 import React, {useEffect} from 'react';
 import { useTruncate } from '../src/useTruncate';
 
+let options = {
+length:50,
+ending:'...'
+};
+
 useEffect(() => {
  setText('updated');
 },[]);
 
 export const Demo = () => {
-  const { text, setText } = useTruncate('initial');
+  const { text, setText } = useTruncate('initial',options);
 
   return (
     <div>
