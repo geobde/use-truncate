@@ -3,7 +3,7 @@
 Import the hook:
 
 ```javascript
-import { useTruncate } from 'use-truncate';
+import { useTruncate } from '../src/useTruncate';
 ```
 
 ### Truncate text
@@ -28,7 +28,7 @@ useEffect(() => {
 },[]);
 
 export const Demo = () => {
-  const { text, setText } = useTruncate('initial',options);
+  const { text, setText } = useTruncate('initial', options);
   
   return (
     <div>
